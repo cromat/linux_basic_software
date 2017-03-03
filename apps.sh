@@ -55,7 +55,8 @@ gdebi-core \
 aptitude \
 python-apsw \
 python-m2crypto \
-python-appindicator
+python-appindicator \
+libx11-dev
 
 
 # VlSub
