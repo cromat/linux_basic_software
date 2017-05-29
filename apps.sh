@@ -1,6 +1,7 @@
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:screenlets/ppa
+sudo add-apt-repository -y ppa:linuxthebest.net/sopcast
 sudo apt-get update && \
 sudo apt-get --assume-yes install \
 p7zip-full \
@@ -56,8 +57,11 @@ aptitude \
 python-apsw \
 python-m2crypto \
 python-appindicator \
-libx11-dev
+libx11-dev \
+sopcast-player
 
+# Remove sopcast repository because it will not be updated
+sudo add-apt-repository --remove -y ppa:linuxthebest.net/sopcast
 
 # VlSub
 wget https://github.com/exebetche/vlsub/archive/master.zip
