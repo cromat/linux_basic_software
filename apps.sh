@@ -59,7 +59,8 @@ python-m2crypto \
 python-appindicator \
 libx11-dev \
 sopcast-player \
-pavucontrol
+pavucontrol \
+ncdu
 
 # Remove sopcast repository because it will not be updated
 sudo add-apt-repository --remove -y ppa:linuxthebest.net/sopcast
