@@ -47,7 +47,8 @@ libx11-dev \
 sopcast-player \
 ncdu \
 ubuntu-make \
-virtualbox
+virtualbox \
+snapd
 
 # VS Code
 yes | umake ide visual-studio-code --accept-license
@@ -69,20 +70,9 @@ wget https://github.com/exebetche/vlsub/archive/master.zip
 unzip master.zip
 sudo cp vlsub-master/vlsub.lua /usr/lib/vlc/lua/extensions/
 
-# Open as admin script
-cp open-as-administrator ~/.local/share/nautilus/scripts
-chmod 0755 ~/.local/share/nautilus/scripts/open-as-administrator
-
 # Bash-it framework
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh --silent
 
-# Restricted extras (multimedia plugins)
-sudo apt-get -qq -y install ubuntu-restricted-extras
-
 # Acestream
-sudo gdebi --n acestream_ubuntu_64/libgnutls-deb0-28_3.3.15-5ubuntu2_amd64.deb
-sudo gdebi --n acestream_ubuntu_64/acestream-engine_3.0.5.1-0.2_amd64.deb
-sudo gdebi --n acestream_ubuntu_64/acestream-player-data_3.0.2-1.1_amd64.deb
-sudo gdebi --n acestream_ubuntu_64/acestream-player-compat_3.0.2-1.1_amd64.deb
-sudo gdebi --n acestream_ubuntu_64/acestream-player_3.0.2-1.1_amd64.deb
+sudo snap install acestreamplayer
