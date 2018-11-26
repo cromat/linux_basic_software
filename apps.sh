@@ -48,7 +48,9 @@ sopcast-player \
 ncdu \
 ubuntu-make \
 virtualbox \
-snapd
+snapd \
+joystick \
+jstest-gtk
 
 # VS Code
 yes | umake ide visual-studio-code --accept-license
