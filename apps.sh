@@ -60,7 +60,9 @@ python-appindicator \
 libx11-dev \
 sopcast-player \
 pavucontrol \
-ncdu
+ncdu \
+joystick \
+jstest-gtk
 
 # Remove sopcast repository because it will not be updated
 sudo add-apt-repository --remove -y ppa:linuxthebest.net/sopcast
